@@ -34,7 +34,7 @@ public Persona  tomInfPersona() {
 	}while(id <= 0);		
 	String nombre = JOptionPane.showInputDialog("Ingrese el Nombre");
 	String apellido = JOptionPane.showInputDialog("Ingrese el Apellido");
-	return new Persona (id, nombre, apellido);
+	return new Persona (id, nombre.toUpperCase(), apellido.toUpperCase());
 	}
 
 

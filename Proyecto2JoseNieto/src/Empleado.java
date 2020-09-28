@@ -5,7 +5,7 @@ public class Empleado extends Persona {
 	
 	
 	public Empleado (int id, String nombre, String apellido, int salario) {
-		super(id, nombre, apellido);
+		super(id, nombre.toUpperCase(), apellido.toLowerCase());
 		this.salario = salario;
 	}
 

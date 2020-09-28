@@ -6,8 +6,8 @@ public class Persona {
 	
 	public Persona(int id, String nombre, String apellido) {
 		this.id = id;
-		this.nombre = nombre;
-		this.apellido = apellido;
+		this.nombre = nombre.toUpperCase();
+		this.apellido = apellido.toUpperCase();
 		
 	}
 
@@ -29,7 +29,7 @@ public class Persona {
 	}
 
 	public void setNombre(String nombre) {
-		this.nombre = nombre;
+		this.nombre = nombre.toUpperCase();
 	}
 
 	public String getApellido() {
@@ -37,7 +37,7 @@ public class Persona {
 	}
 
 	public void setApellido(String apellido) {
-		this.apellido = apellido;
+		this.apellido = apellido.toUpperCase();
 	}
 
 	
